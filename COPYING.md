@@ -1,0 +1,32 @@
+# Licensing
+
+## Image
+
+The tarball and config checked into this repo belong to this image:
+
+```
+docker.io/library/busybox:1.36.1-glibc@sha256:538721340ded10875f4710cad688c70e5d0ecb4dcd5e7d0c161f301f36f79414
+```
+
+To the best of the author's knowledge, that image corresponds to this
+[Docker commit], which refers to this [Busybox download link], which is
+licensed under GPLv2.
+
+[Docker commit]: https://github.com/docker-library/busybox/commits/09ee80aedec1d8c604f104e8bec41ed19274620a
+[Busybox download link]: https://busybox.net/downloads/busybox-1.36.1.tar.bz2
+
+## Code
+
+Copyright 2024 Markus Rudy
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED “AS IS” AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
