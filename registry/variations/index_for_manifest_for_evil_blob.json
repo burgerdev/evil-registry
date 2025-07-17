@@ -1,0 +1,25 @@
+{
+  "manifests": [
+    {
+      "annotations": {
+        "com.docker.official-images.bashbrew.arch": "amd64",
+        "org.opencontainers.image.base.name": "scratch",
+        "org.opencontainers.image.created": "2025-05-20T23:10:15Z",
+        "org.opencontainers.image.revision": "c48244ec06971ec9da046a065764cff4d92c3c25",
+        "org.opencontainers.image.source": "https://github.com/docker-library/busybox.git",
+        "org.opencontainers.image.url": "https://hub.docker.com/_/busybox",
+        "org.opencontainers.image.version": "1.36.1-glibc"
+      },
+      "digest": "sha256:796560ea145411c98740ff3a2e3320cfc6cc1d56cc377a7c1b788c5629b3f3ea",
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "size": 610
+    }
+  ],
+  "mediaType": "application/vnd.oci.image.index.v1+json",
+  "schemaVersion": 2
+}
+

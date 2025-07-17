@@ -2,18 +2,22 @@
 
 ## Image
 
-The tarball and config checked into this repo belong to this image:
+The tarball and config checked into this repo belong to the `amd64/linux` variant of this image:
 
 ```
-docker.io/library/busybox:1.36.1-glibc@sha256:538721340ded10875f4710cad688c70e5d0ecb4dcd5e7d0c161f301f36f79414
+docker.io/library/busybox:1.36.1-glibc@sha256:fc31e45c8ef62a1c88eecf59333a789b165424883b5960947eb52c1d9752de5d
 ```
 
 To the best of the author's knowledge, that image corresponds to this
 [Docker commit], which refers to this [Busybox download link], which is
 licensed under GPLv2.
 
-[Docker commit]: https://github.com/docker-library/busybox/commits/09ee80aedec1d8c604f104e8bec41ed19274620a
+[Docker commit]: https://github.com/docker-library/busybox/commits/c48244ec06971ec9da046a065764cff4d92c3c25
 [Busybox download link]: https://busybox.net/downloads/busybox-1.36.1.tar.bz2
+
+The index- and manifest files found in `registry/variations/` are derived from the original ones stored in `registry/busybox/`.
+In the case of the indices, all manifests save for `amd64/linux` have been removed, and depending on the purpose of each file,
+digests have been modified to no longer fit what is being returned by the registry.
 
 ## Code
 
