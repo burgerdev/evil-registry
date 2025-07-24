@@ -102,10 +102,10 @@ func v2Handler(rw http.ResponseWriter, _ *http.Request) {
 	rw.WriteHeader(http.StatusOK)
 }
 
-func Run(listener net.Listener) {
-	http.DefaultServeMux.Handle("/v2/busybox/manifests/{digest}", http.HandlerFunc(manifestHandler))
-	http.DefaultServeMux.Handle("/v2/busybox/blobs/{digest}", http.HandlerFunc(blobHandler))
-	http.DefaultServeMux.Handle("/v2/", http.HandlerFunc(v2Handler))
+func Run(listener net.Listener, mux *http.ServeMux) {
+	mux.Handle("/v2/busybox/manifests/{digest}", http.HandlerFunc(manifestHandler))
+	mux.Handle("/v2/busybox/blobs/{digest}", http.HandlerFunc(blobHandler))
+	mux.Handle("/v2/", http.HandlerFunc(v2Handler))
 
-	http.Serve(listener, http.DefaultServeMux)
+	http.Serve(listener, mux)
 }

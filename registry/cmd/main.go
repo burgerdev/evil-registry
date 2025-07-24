@@ -5,6 +5,7 @@ import (
 	"flag"
 	"log"
 	"net"
+	"net/http"
 
 	"github.com/burgerdev/evil-registry/registry"
 )
@@ -18,5 +19,5 @@ func main() {
 		log.Fatalf("Could not listen on %s: %v", *addr, err)
 	}
 	log.Printf("serving a registry on %s ...", *addr)
-	registry.Run(listener)
+	registry.Run(listener, http.DefaultServeMux)
 }
